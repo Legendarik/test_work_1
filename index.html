@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Landing</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="pictures">
+        <figure>
+          <img src="css/img/girl.png" alt="beautifull girl" />
+        </figure>
+        <div class="text-transform">
+          <span>Hello<br />my friend</span>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form
+          name="user_form"
+          id="FormNotEnter"
+          action="#"
+          onsubmit="return validate_form ( );"
+        >
+          <div class="pole-container">
+            <b>Ваше имя:</b><br />
+            <input name="user_name" type="text" placeholder="Имя" /><br />
+            <b>Телефон:</b><br />
+            <input
+              name="user_phone"
+              type="tel"
+              placeholder="Номер телефона"
+            /><br />
+            <b>Пароль:</b><br />
+            <input
+              name="user_password"
+              type="password"
+              placeholder="Пароль"
+            /><br />
+          </div>
+          <div class="radio-container">
+            <input type="radio" id="love1" name="work" value="love" />
+            <label for="love1">Люблю свою работу</label><br />
+            <input type="radio" id="love2" name="work" value="verylove" />
+            <label for="love2">Очень люблю свою работу</label>
+          </div>
+
+          <button type="submit">Отправить анкету</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

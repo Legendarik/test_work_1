@@ -1,0 +1,158 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 360px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pictures {
+  margin: 112px;
+  position: relative;
+}
+.pictures img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.text-transform {
+  color: #7d98f6;
+  font-size: 88px;
+  font-weight: 700;
+  transform: rotate(-45deg);
+  white-space: nowrap;
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+
+.form-container {
+  margin: 112px 64px;
+}
+.form-container b {
+  margin: 8px 0px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pole-container input {
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  width: 400px;
+  border-radius: 12px;
+  border: none;
+  margin: 8px 0px;
+  padding: 0;
+  background: #f8f8f8;
+}
+.pole-container input {
+  padding-left: 18px;
+}
+.radio-container {
+  margin: 24px 0px;
+}
+input[type="radio"] {
+  appearance: none;
+  border: 1px solid #0000004d;
+  border-radius: 50%;
+  outline: none;
+  background: #f8f8f8;
+  vertical-align: middle;
+  margin: 12px 0px;
+  height: 32px;
+  width: 32px;
+}
+input[type="radio"]:hover,
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+input[type="radio"]:checked {
+  background: #fff;
+  box-shadow: inset #7d98f6 0 0 0 10px;
+}
+
+label {
+  margin-left: 16px;
+}
+
+#FormNotEnter button {
+  float: right;
+  height: 56px;
+  width: 218px;
+  border-radius: 28px;
+  background: #7d98f6;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .pictures,
+  .form-container {
+    margin: 4%;
+  }
+  .text-transform {
+    font-size: 7vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pictures {
+    flex: 1;
+  }
+  .pictures img {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .text-transform {
+    font-size: 8vw;
+  }
+
+  .form-container {
+    flex: 1;
+    display: inline-block;
+  }
+  .pole-container input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    display: block;
+  }
+  .pictures img {
+    max-width: 50%;
+  }
+  .text-transform {
+    font-size: 10vw;
+    left: 45%;
+    top: 40%;
+  }
+  .form-container {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  #FormNotEnter button {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+}
